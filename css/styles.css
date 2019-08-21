@@ -311,6 +311,7 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
   transform: translateZ( 1px );
 }
 
+/*Not sure what this changes*/
 .valid:before, .current:before { 
   width: .3em;
   height: .3em;
@@ -319,15 +320,18 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
   background: rgba(0,255,0,.5);
 }
 
+/*Surrounding fog*/
 .highlight:before { 
   z-index: 2;
-  box-shadow: 0 0 1em 1em rgba(0,255,0,.4);
+  box-shadow: 0 0 1em 1em rgba(255,255,255,.4);
 }
 
+/*Starting place from where you pick the piece up from*/
 .valid.highlight:before, 
 .current.highlight:before, 
 .current:before { background: rgba(0,255,0,1); }
 
+/*The highlight around the starting place from where you pick the piece up from*/
 .valid.highlight:after,
 .current.highlight:after { 
   width: .6em;
@@ -337,23 +341,28 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
   border: .1em solid rgba(0,255,0,.8);
 }
 
+/*I have no idea*/
 .valid.captured:after { 
   width: .8em;
   height: .8em;
   margin-left: -.4em;
   margin-top: -.4em;
-  border: .1em solid rgba(255,255,255,.6);
+  border: .1em solid rgba(0,0,255,.6);
 }
 
-.valid:before { background: rgba(0,255,0,.35); }
+/*Possible move places*/
+.valid:before { background: rgba(255, 255, 255, 0.35); }
 .valid:after { border: none; }
 
-.valid.highlight:before { background: rgba(255,255,255,1); }
+/*Hover over possible move*/
+.valid.highlight:before { background: rgba(0,0,0,1); }
 .valid.highlight:after { border: .15em solid rgb(0, 255, 0); }
 
-.valid.captured:before { background: rgba(230, 169, 214,.5); }
-.valid.captured:after { border: .15em solid rgb(230, 39, 182); }
+/*Possible unit capture*/
+.valid.captured:before { background: rgba(0, 0, 255,.5); }
+.valid.captured:after { border: .15em solid rgb(0, 0, 255); }
 
+/*When hovered over possible unit capture*/
 .valid.captured.highlight:before { background: rgba(255,67,47,1); }
 .valid.captured.highlight:after { border: .15em solid rgba(255,67,47,1); }
 
