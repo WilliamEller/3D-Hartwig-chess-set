@@ -311,6 +311,7 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
   transform: translateZ( 1px );
 }
 
+/*Input stuff here*/
 .valid:before, .current:before { 
   width: .3em;
   height: .3em;
@@ -318,16 +319,18 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
   margin-top: -.15em;
   background: rgba(0,255,0,.5);
 }
-
+/*Input stuff here*/
 .highlight:before { 
   z-index: 2;
   box-shadow: 0 0 1em 1em rgba(0,255,0,.4);
 }
 
+/*Input stuff here*/
 .valid.highlight:before, 
 .current.highlight:before, 
 .current:before { background: rgba(0,255,0,1); }
 
+/*Input stuff here*/
 .valid.highlight:after,
 .current.highlight:after { 
   width: .6em;
@@ -337,6 +340,7 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
   border: .1em solid rgba(0,255,0,.8);
 }
 
+/*Input stuff here*/
 .valid.captured:after { 
   width: .8em;
   height: .8em;
@@ -345,15 +349,19 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
   border: .1em solid rgba(255,255,255,.6);
 }
 
+/*Input stuff here*/
 .valid:before { background: rgba(0,255,0,.35); }
 .valid:after { border: none; }
 
+/*Input stuff here*/
 .valid.highlight:before { background: rgba(255,255,255,1); }
 .valid.highlight:after { border: .15em solid rgb(0, 255, 0); }
 
+/*Input stuff here*/
 .valid.captured:before { background: rgba(230, 169, 214,.5); }
 .valid.captured:after { border: .15em solid rgb(230, 39, 182); }
 
+/*Input stuff here*/
 .valid.captured.highlight:before { background: rgba(255,67,47,1); }
 .valid.captured.highlight:after { border: .15em solid rgba(255,67,47,1); }
 
