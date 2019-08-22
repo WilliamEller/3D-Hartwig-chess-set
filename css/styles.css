@@ -351,7 +351,11 @@ tbody span { line-height: 4.5em; padding-right: 0.3em; }
 }
 
 /*Possible move places*/
-.valid:before { background: rgba(255, 255, 255, 0.35); }
+.valid:before { 
+  background: rgba(255, 255, 255, 0.5);
+  border: .02em solid rgba(0,0,0,.8);
+
+}
 .valid:after { border: none; }
 
 /*Hover over possible move*/
